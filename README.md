@@ -91,6 +91,6 @@ npm run watch
 ```
 ## How to use##
 
-The API offers several endpoints to access and manipulate data in the database through both CRUD and custom actions.Check the REQUIREMENTS.md file to see the details.
+The API offers several endpoints to access and manipulate data in the database through both CRUD and custom actions. Check the "REQUIREMENTS.md" file to see the details.
 
 ---
