@@ -89,6 +89,31 @@ npm run lint
 ```
 npm run watch
 ```
+## Docker compose file  ##
+
+```
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD="YOUR PASSWORD"
+    ports:
+      - '5432:5432'
+    env_file:
+      - .env
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+
+volumes:
+  postgres:
+```
+Run command 
+```
+Docker-compose up
+```
 ## How to use##
 
 The API offers several endpoints to access and manipulate data in the database through both CRUD and custom actions. Check the "REQUIREMENTS.md" file to see the details.
